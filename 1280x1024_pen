@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# i used the following command to find the device coordinates:
+# $sudo evtest /dev/input/event14
+# where 14 turned out to be the number of the pen input device
+
+xinput --disable "ELAN Touchscreen"
+xsetwacom set "Wacom ISDv4 EC Pen stylus" area 4050 0 23600 15652
